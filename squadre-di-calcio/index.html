@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>arry-di-oggetti-squadre-di-calcio</title>
+    <title>array-di-oggetti-squadre-di-calcio</title>
 </head>
 <body>
     <script>
@@ -13,6 +13,17 @@
             {nome:"Fiorentina", punti: 0, falliSubiti: 0},
             {nome:"Inter", punti: 0, falliSubiti: 0},
         ];
+
+        for(let i = 0; i < squadreDiCalcio.length; i++){
+            squadreDiCalcio[i].punti = Math.floor(Math.random() * 100);
+            squadreDiCalcio[i].falliSubiti = Math.floor(Math.random() * 100);
+        }
+
+        const nuovoArray = [];
+        for(let i = 0; i < squadreDiCalcio.length; i++){
+            nuovoArray.push({nome: squadreDiCalcio[i].nome, falliSubiti: squadreDiCalcio[i].falliSubiti});
+        }
+        console.log(nuovoArray);
        
 
 
