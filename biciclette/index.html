@@ -14,6 +14,15 @@
             {nome:"bici blu", peso: 6},
         ];
 
+        let biciMinore = biciDaCorsa[0];
+        for(let i = 1; i < biciDaCorsa.length; i++){
+            if(biciDaCorsa[i].peso < biciMinore.peso){
+                biciMinore = biciDaCorsa[i];
+            }
+        }
+
+        console.log(`La bici con peso minore è: ${biciMinore.nome}.`);
+
 
 
 
